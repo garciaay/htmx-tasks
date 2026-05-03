@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title ?: 'Task Manager'}</title>
+
+    {#bundle}
+        <script src="htmx.org/dist/htmx.min.js"></script>
+    {/bundle}
+
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .htmx-indicator {
+            display: none;
+        }
+
+        .htmx-request .htmx-indicator {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+{#insert /}
+</body>
+</html>
